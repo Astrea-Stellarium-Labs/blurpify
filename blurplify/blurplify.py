@@ -13,7 +13,7 @@ def _blurplify(
     img_output: typing.Union[str, pathlib.Path, io.BytesIO],
     enhancements: bool = False,
 ):
-    """The part that actually blurplefies images."""
+    """The part that actually blurpifies images."""
     try:
         img = Image.open(img_input)
         format = img.format  # just in case
@@ -52,16 +52,16 @@ def convert(
     img_output: typing.Optional[typing.Union[str, pathlib.Path, io.BytesIO]] = None,
     enhancements: bool = True,
 ) -> typing.Union[str, pathlib.Path, io.BytesIO]:
-    """Blurplifies the given image.
+    """Blurpifies the given image.
 
     Parameters
     ----------
     img_input: `Union[str, pathlib.Path, io.BytesIO]`
-        The file to blurplify.
+        The file to blurpify.
         Specify either a string to the path, the path itself, or a io.BytesIO container.
         Animated GIFS do not work as of yet.
     img_output: `Optional[Union[str, pathlib.Path, io.BytesIO]]`
-        Where the blurplified images goes.
+        Where the blurpified images goes.
         Specify either a string to the output path, the path itself, or a io.BytesIO container.
 
         If not provided, the program will either use the path as the input
