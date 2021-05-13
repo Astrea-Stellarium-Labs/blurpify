@@ -16,8 +16,8 @@ blurplify.convert(input_file, output_file)
 - Add support for animated GIFs
 
 # Original version
-The original version has been taken down, but you can find an archive of it here:
-[archive](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/memethyl/blurpify)
+The original version has been taken down, but you can find an archive of it
+[here](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/memethyl/blurpify).
 
 # Possibly Asked Questions:
 > Didn't you just make another program that blurplifies images?
