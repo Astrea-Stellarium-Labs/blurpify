@@ -1,14 +1,25 @@
 # blurpify
 A remake of a program that "blurpifies" images by converting them to shades of blurple.
 
-# Basic example
+# How to Use
+If you wish to use it as a standard library, here's an example of how to do so:
 ```python
 import blurpify
 
-input_file = "path/to/file"
-output_file = "path/to/output_file"
+input_file = "C:/path/to/your/input.jpg"
+output_file = "C:/path/to/your/output.jpg"
 
 blurpify.convert(input_file, output_file)
+```
+
+If you wish to use it from the command line, open up your favorite command prompt and use:
+```sh
+blurpify C:/path/to/your/input.jpg
+```
+
+If you wish to make the output file a seperate file, use:
+```sh
+blurpify C:/path/to/your/input.jpg C:/path/to/your/output.jpg
 ```
 
 # TODO
