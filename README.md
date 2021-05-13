@@ -32,7 +32,6 @@ blurpify C:/path/to/your/input.jpg C:/path/to/your/output.jpg
 ```
 
 ## TODO
-- Command line support
 - Add support for animated GIFs
 
 ## Original version
