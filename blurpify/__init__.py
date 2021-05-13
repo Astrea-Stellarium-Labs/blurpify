@@ -1,5 +1,5 @@
 """
-blurplify
+blurpify
 ~~~~~~~
 A remake of a program that "blurpifies" images by converting them to shades of blurple.
 
@@ -9,4 +9,4 @@ Original Program Copyright (c) 2018 memethyl
 
 :license: GPL v3, see LICENSE for more details.
 """
-from .blurplify import convert
+from .blurpify import convert

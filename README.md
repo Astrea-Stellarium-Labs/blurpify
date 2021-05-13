@@ -3,12 +3,12 @@ A remake of a program that "blurpifies" images by converting them to shades of b
 
 # Basic example
 ```python
-import blurplify
+import blurpify
 
 input_file = "path/to/file"
 output_file = "path/to/output_file"
 
-blurplify.convert(input_file, output_file)
+blurpify.convert(input_file, output_file)
 ```
 
 # TODO

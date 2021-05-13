@@ -8,7 +8,7 @@ from PIL import ImageEnhance
 from .blurple_map import blurplify_map
 
 
-def _blurplify(
+def _blurpify(
     img_input: typing.Union[str, pathlib.Path, io.BytesIO],
     img_output: typing.Union[str, pathlib.Path, io.BytesIO],
     enhancements: bool = False,
@@ -89,4 +89,4 @@ def convert(
         else:
             raise ValueError("Invalid input type!")
 
-    return _blurplify(img_input, img_output, enhancements)
+    return _blurpify(img_input, img_output, enhancements)
