@@ -7,7 +7,7 @@ setup(
     name="blurpify",
     version="0.0.2",
     description='A remake of a program that "blurpifies" images by converting them to shades of blurple.',
-    license="GPL v3",
+    license="GPL-3.0",
     long_description=long_description,
     author="Sonic49",
     url="https://github.com/Sonic4999/blurpify",
