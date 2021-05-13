@@ -1,7 +1,16 @@
 # blurpify
 A remake of a program that "blurpifies" images by converting them to shades of blurple.
 
-# How to Use
+## Installation
+
+**Python 3.8+ is required.** It's possible to make a fork that supports a Python version lower than that, but I won't support it.
+
+I'll eventually add this to PyPI, but for now, you can install it via:
+```sh
+pip install -U git+https://github.com/Sonic4999/blurpify.git
+```
+
+## How to Use
 If you wish to use it as a standard library, here's an example of how to do so:
 ```python
 import blurpify
@@ -22,15 +31,15 @@ If you wish to make the output file a seperate file, use:
 blurpify C:/path/to/your/input.jpg C:/path/to/your/output.jpg
 ```
 
-# TODO
+## TODO
 - Command line support
 - Add support for animated GIFs
 
-# Original version
+## Original version
 The original version has been taken down, but you can find an archive of it
 [here](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/memethyl/blurpify).
 
-# Possibly Asked Questions:
+## Possibly Asked Questions:
 > Didn't you just make another program that blurplifies images?
 
 Yes, [here](https://github.com/Sonic4999/blurplefier-standalone), but that *blurplifies* images, not *blurpifies* them.
