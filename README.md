@@ -57,7 +57,9 @@ Who knows. Hopefully it is. I like the results of this too much, anywho.
 
 > This isn't even like the original version! The colors are slightly different!
 
-That's not a question. Regardless, yeah, it isn't. The original project used a different method of grayscaling that's hard to replicate in Python, so I didn't bother, instead just using Pillow's default grayscaling (which works fine for most people). By default, the program attempts to do some slight brightness and contrast adjustments to get things closer to the original version, but it's not perfect, and you can disable this if you want. I don't intend to fix this 'problem' regardless.
+That's not a question. Regardless, yeah, it isn't. The original project used a different method of grayscaling that's hard to replicate in Python, so I didn't bother. Instead, I just used Pillow's default grayscaling (which works fine for most cases).
+
+By default, the program attempts to do some slight brightness and contrast adjustments to get things closer to the original version, but it's not perfect. You can disable these 'enhancements' if you want. I don't intend to fix this 'problem' regardless because the work required to do so is not worth it.
 
 > Why make this?
 
