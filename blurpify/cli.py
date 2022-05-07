@@ -3,6 +3,7 @@ import pathlib
 import time
 
 import blurpify
+from .blurpify import BlurpleType
 
 
 def main():
@@ -23,6 +24,12 @@ def main():
         default=None,
     )
     parser.add_argument(
+        "-old-blurple",
+        "--old-blurple",
+        action="store_true",
+        help="Should the image use the old blurple?",
+    )
+    parser.add_argument(
         "-noe",
         "--noe",
         "-noenhancements",
@@ -36,9 +43,10 @@ def main():
     args: argparse.Namespace = parser.parse_args()
     input_image = args.input_image
     output_image = args.output_image
+    blurple_type = BlurpleType.OLD_BLURPLE if args.old_blurple else BlurpleType.BLURPLE
     enhancements = not args.noe
 
-    blurpify.convert(input_image, output_image, enhancements)
+    blurpify.convert(input_image, output_image, blurple_type, enhancements)
 
     end_time = time.perf_counter()
     time_taken = round(((end_time - start_time) * 1000), 2)
