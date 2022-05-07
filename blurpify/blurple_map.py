@@ -1,8 +1,8 @@
-"""A set of pre-generated values to use when blurplifing.
+"""A set of pre-generated values to use when blurplifing for old blurple.
 These values were extracted from the original program, and were apparently made by Rina#6666.
 Each shade of gray is represented with its corresponding shade of blurple, so that's neat."""
 
-blurplify_map = {
+old_blurplify_map = {
     0: (0, 0, 0),
     1: (1, 1, 20),
     2: (1, 3, 29),

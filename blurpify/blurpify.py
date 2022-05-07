@@ -5,7 +5,7 @@ import typing
 from PIL import Image
 from PIL import ImageEnhance
 
-from .blurple_map import blurplify_map
+from .blurple_map import old_blurplify_map
 
 
 def _blurpify(
@@ -38,7 +38,7 @@ def _blurpify(
 
         data = img.getdata()
         # gets the blurple value based on the grayscale color, then re-adds the alpha channel
-        new_data = tuple(blurplify_map[p[0]] + (p[3],) for p in data)
+        new_data = tuple(old_blurplify_map[p[0]] + (p[3],) for p in data)
         img.putdata(new_data)
 
         img.save(img_output, format=img_format)
