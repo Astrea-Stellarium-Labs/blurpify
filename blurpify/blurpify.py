@@ -16,7 +16,7 @@ def _blurpify(
     """The part that actually blurpifies images."""
     try:
         img = Image.open(img_input)
-        format = img.format  # just in case
+        img_format = img.format  # just in case
 
         if img.is_animated:  # currently does not support animated GIFs
             raise ValueError("Cannot process animated GIFs!")
@@ -38,10 +38,10 @@ def _blurpify(
 
         data = img.getdata()
         # gets the blurple value based on the grayscale color, then re-adds the alpha channel
-        new_data = tuple(blurplify_map[p[0]] + tuple([p[3]]) for p in data)
+        new_data = tuple(blurplify_map[p[0]] + (p[3],) for p in data)
         img.putdata(new_data)
 
-        img.save(img_output, format=format)
+        img.save(img_output, format=img_format)
         return img_output
     finally:
         img.close()
