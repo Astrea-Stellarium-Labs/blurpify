@@ -5,8 +5,11 @@ with open("README.md", "r") as f:
 
 setup(
     name="blurpify",
-    version="0.0.2",
-    description='A remake of a program that "blurpifies" images by converting them to shades of blurple.',
+    version="0.1.0",
+    description=(
+        'A remake of a program that "blurpifies" images by converting them to shades of'
+        " blurple."
+    ),
     license="GPL-3.0",
     long_description=long_description,
     author="Astrea49",
@@ -14,5 +17,7 @@ setup(
     packages=["blurpify"],
     install_requires=["pillow"],
     python_requires=">=3.8.0",
-    entry_points={"console_scripts": "blurpify = blurpify.cli:main",},
+    entry_points={
+        "console_scripts": "blurpify = blurpify.cli:main",
+    },
 )
